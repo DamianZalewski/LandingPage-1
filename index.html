@@ -17,10 +17,15 @@
     <header class="mainHeader">
         <nav>
             <div class="menuIconContainer">
-                <img src="images/hamburgerIcon.png" alt="navigation icon">
+                <img id="menuIcon" src="images/hamburgerIcon.png" alt="navigation icon">
+                <img id="closeIcon" style="display:none" src="images/arrowIcon.png" alt="navigation icon">
             </div>
-            <aside class="sideMenu">
-                akfhaljf hal
+            <aside id="sideMenu" class="sideMenu closeMenu">
+                <a href="#"><i class="fas fa-anchor"></i> Link 1</a>
+                <a href="#"><i class="fas fa-anchor"></i> Link 2</a>
+                <a href="#"><i class="fas fa-anchor"></i> Link 3</a>
+                <a href="#"><i class="fas fa-anchor"></i> Link 4</a>
+                <a href="#"><i class="fas fa-anchor"></i> Link 5</a>
             </aside>
         </nav>
         <img class="pageLogo" src="images/logo.png" alt="page logo image">
@@ -126,6 +131,8 @@
             LOGO &copy; 2020 - All Rights Reserved
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>

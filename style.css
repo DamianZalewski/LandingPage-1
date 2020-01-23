@@ -48,12 +48,39 @@ h1 {
 
 .sideMenu {
     position: fixed;
-    top: 10vh;
+    top: 80px;
     width: 100%;
     z-index: 1;
-    height: 100vh;
-    background-color: red;
-    display: none;
+    min-height: 100vh;
+    background-color:#313131;
+    transition: all .5s;
+    box-sizing: border-box;
+    left:-100%;
+}
+
+.sideMenu a {
+    display: block;
+    color:#ffffff;
+    text-decoration: none;
+    font-size:1rem;
+    padding:1rem;
+}
+
+.sideMenu a:nth-child(even){
+    background-color: #4a4a4a;
+}
+
+.sideMenu a:hover{
+    cursor: pointer;
+    color:#e5e5e5;
+}
+
+.closeMenu{
+    left:-100%;
+}
+
+.openMenu{
+    left:0;
 }
 
 .mainSection {
@@ -148,6 +175,10 @@ h1 {
     margin-top: 2rem;
     margin-bottom: 2rem;
     border-radius: 64px;
+    animation-name: buttonAnimation;
+    animation-duration: .5s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate-reverse;
 }
 
 .downloadSection article .downloadButton:hover {
@@ -380,4 +411,9 @@ footer .footerElement i:hover {
             margin: 0;
         }
     }
+}
+
+@keyframes buttonAnimation {
+  from {width:250px; }
+  to {width: 245px; }
 }
