@@ -11,6 +11,11 @@ body {
 
 }
 
+
+h1 {
+    font-size: 2rem;
+}
+
 .mainHeader {
     width: 100vw;
     background-color: #f9f9f9;
@@ -78,6 +83,7 @@ body {
 
 .keyFeaturesSection {
     width: 100vw;
+    padding: 1rem;
     box-sizing: border-box;
     color: #242424;
     text-align: center;
@@ -105,8 +111,8 @@ body {
     color: #000000;
 }
 
-.keyItem p{
-    padding-left:1rem;
+.keyItem p {
+    padding-left: 1rem;
     padding-right: 1rem;
 }
 
@@ -117,10 +123,6 @@ body {
     background-color: #f7f7f7;
     color: #242424;
     text-align: center;
-}
-
-.downloadSection header h1 {
-    font-size: 2rem;
 }
 
 .downloadSection article {
@@ -162,7 +164,7 @@ body {
 .peopleSection {
     width: 100vw;
     box-sizing: border-box;
-    padding:1rem;
+    padding: 1rem;
     background-color: #1fc8db;
     background-image: linear-gradient(141deg, #53e8a6 0%, #1fc8db 51%, #2cb5e8 75%);
     text-align: center;
@@ -186,7 +188,7 @@ body {
     width: 80px;
     top: -30px;
     left: 50%;
-    margin-left:-40px;
+    margin-left: -40px;
     border-radius: 50%;
     background-color: #ffffff;
 }
@@ -209,14 +211,20 @@ body {
     width: 100vw;
     box-sizing: border-box;
     color: #242424;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 .brandSection img {
+    align-self: center;
     display: block;
-    margin: auto;
-    width: 150px;
-    margin-top: 2rem;    
-    margin-bottom: 2rem;
+    content: 'asdasd';
+    width: 100px;
+    height: 100px;
+    margin: 2rem;
     opacity: 0.7;
 }
 
@@ -258,9 +266,9 @@ footer .footerElement i {
     max-width: 25%;
     background-color: #797979;
     text-align: center;
-    margin-left:0.5rem;
-    margin-right:0.5rem;
-    margin-top:1rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin-top: 1rem;
 }
 
 footer .footerElement i:hover {
@@ -273,66 +281,103 @@ footer .footerElement i:hover {
     color: gray
 }
 
-@media only screen and (min-width:800px){
-    .menuIconContainer{
-        display:none;
+@media only screen and (min-width:800px) {
+    .menuIconContainer {
+        display: none;
     }
-    
-    .mainSection{
-        min-height:auto;
+
+    .mainSection {
+        min-height: auto;
         padding-bottom: 3rem;
     }
-    
-    .mainSection header{
+
+    .mainSection header {
         text-align: left;
         display: inline-block;
         vertical-align: top;
-        width:250px;
+        width: 250px;
         padding-top: 1.5rem;
     }
-    
-    .mainSection header img{
+
+    .mainSection header img {
         text-align: left;
         display: inline-block;
     }
-    
-    .keyItem{
-        width:33%;
+
+    .keyItem {
+        width: 33%;
         max-width: 400px;
         display: inline-block;
         margin-bottom: 1rem;
     }
-    
-    .downloadSection .downloadDescription{
-        width:60%;
+
+    .downloadSection .downloadDescription {
+        width: 60%;
         display: inline-block;
         vertical-align: top
     }
-    
-     .downloadSection .downloadImageContainer{
-        width:30%;
+
+    .downloadSection .downloadImageContainer {
+        width: 30%;
         display: inline-block;
         padding-top: 2rem;
     }
 
-    .personCard{
+    .personCard {
         width: 25%;
         display: inline-block;
         max-width: 400px;
-        margin-left:10px;
+        margin-left: 10px;
         margin-right: 10px;
         margin-bottom: 2rem;
     }
-    
+
     .brandSection {
         text-align: center;
     }
-    
-    .brandSection img{
-        max-width:200px;
+
+    .brandSection img {
+        max-width: 200px;
         display: inline-block;
         box-sizing: border-box;
         margin-left: 10px;
         margin-right: 10px;
+    }
+
+    .footerElement {
+        width: 30%;
+        display: inline-block;
+        vertical-align: top;
+        padding: 10px;
+    }
+
+    footer .footerElement:nth-of-type(1) {
+        text-align: left;
+    }
+
+    footer .footerElement img {
+        margin-left: 0;
+    }
+
+    footer .footerElement i {
+        width: 36px;
+        height: 36px;
+        padding-top: 10px;
+    }
+
+    footer .footerElement i:first-of-type {
+        margin-left: 0;
+    }
+
+    @media only screen and (min-width:1100px) {
+        .mainSection header h1 {
+            font-size: 3.5rem;
+            margin: 0;
+        }
+
+        .mainSection header h4 {
+            font-size: 1.5rem;
+            margin: 0;
+        }
     }
 }
